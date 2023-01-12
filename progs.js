@@ -13,10 +13,10 @@ function scrollFunction() {
     let about = document.getElementById('about-btn');
     let contact = document.getElementById('contact-btn');
     
-  if (document.documentElement.scrollTop > 1 && document.documentElement.scrollTop <= 400 ) {
+  if (document.documentElement.scrollTop > 1 && document.documentElement.scrollTop <= 500 ) {
     home.classList.add('bg-secondary-color');
   }
-  else if(document.documentElement.scrollTop > 400){
+  else if(document.documentElement.scrollTop > 500){
     home.classList.remove('bg-secondary-color');
   }
 
