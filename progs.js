@@ -1,4 +1,5 @@
 function Menu(e) {
+  
     let list = document.querySelector('ul');
 
     e.name === 'menu' ? (e.name = "close",list.classList.add('opacity-100')) 
@@ -38,3 +39,15 @@ function scrollFunction() {
 
 
 }
+
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
+
